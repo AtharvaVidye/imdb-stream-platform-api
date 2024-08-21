@@ -60,3 +60,7 @@ Refer to the API documentation for detailed information on each endpoint and the
 
 This API uses token-based authentication. To obtain a token, make a POST request to /api/token/ with your credentials. Include the token in the Authorization header of your requests.
 
+🎥 Building a Powerful IMDB Stream Platform API with Django & DRF | Full Project Walkthrough
+
+[![Video Thumbnail](https://img.youtube.com/vi/EMe3IGSLGXk/0.jpg)](https://www.youtube.com/watch?v=EMe3IGSLGXk)
+
