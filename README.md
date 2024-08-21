@@ -3,15 +3,11 @@ IMDB DRF Backend is a Django and DRF-based service for managing IMDB data. It of
 
 ## 📚 Features
 
-**CRUD Operations**: Create, Read, Update, and Delete movie records.
-
-**Search Functionality**: Search for movies based on various criteria.
-
-**Pagination**: Efficiently handle large sets of data with pagination.
-
-**Authentication & Authorization**: Secure endpoints using token-based authentication.
-
-**Swagger Documentation**: Interactive API documentation for easy testing and exploration.
+- **CRUD Operations:** Create, Read, Update, and Delete operations for movies, streaming platforms, and reviews.
+- **Authentication:** Token-based authentication for secure access.
+- **Pagination:** Efficiently handle large datasets with pagination.
+- **Filtering and Searching:** Advanced filtering and searching capabilities.
+- **Browsable API:** Easy-to-use web interface for testing and exploring API endpoints.
 
 ## 🚀 Getting Started
 **Prerequisites**
@@ -46,19 +42,21 @@ Installation
     python manage.py runserver
 The backend service should now be running at http://127.0.0.1:8000/.
 
+6. **Access the API**:
+   
+   The API will be available at http://localhost:8000/. You can use tools like Postman or the built-in Browsable API interface to test the endpoints.
+   
 🛠️ API Endpoints
 
-**Movies**
+- **Movies**: /api/movies/
 
-* GET /movies/: List all movies.
-* POST /movies/: Create a new movie.
-* GET /movies/{id}/: Retrieve a specific movie.
-* PUT /movies/{id}/: Update a specific movie.
-* DELETE /movies/{id}/: Delete a specific movie.
+- **Streaming Platforms**: /api/platforms/
+
+- **Reviews**: /api/reviews/
+
+Refer to the API documentation for detailed information on each endpoint and the available operations.
 
 **Authentication**
 
-* POST /account/login/: Obtain a token for authentication.
-* POST /account/register/: Register a new user.
-* POST /account/logout/: Logout a user.
+This API uses token-based authentication. To obtain a token, make a POST request to /api/token/ with your credentials. Include the token in the Authorization header of your requests.
 
